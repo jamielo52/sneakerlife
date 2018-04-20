@@ -1,0 +1,48 @@
+{
+  "name": "sneakerlife",
+  "version": "1.0.0",
+  "description": "Online Shop for Premium Sneakers",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack -w --config webpack.config.js",
+    "postinstall": "webpack -p",
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamielo52/sneakerlife.git"
+  },
+  "author": "Jamie Lo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamielo52/sneakerlife/issues"
+  },
+  "homepage": "https://github.com/jamielo52/sneakerlife#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "css-loader": "^0.28.11",
+    "express": "^4.16.3",
+    "file-loader": "^1.1.11",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.2.0",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "json-loader": "^0.5.7",
+    "react-svg-loader": "^2.1.0",
+    "webpack": "^4.6.0"
+  }
+}
