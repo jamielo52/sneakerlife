@@ -1,22 +1,22 @@
 {
   "products": [
     {
-      "filename": "shoe3.png",
-      "price": 26000,
-      "name": "Nike Mag 2016: Back to the Future"
-    },
-    {
       "filename": "shoe1.png",
       "price": 21000,
       "name": "Air Jordan 4 Carhartt x Eminem"
     },
     {
-      "filename": "shoe4.png",
+      "filename": "shoe4.jpg",
       "price": 8000,
       "name": "VLONE x Nike Air Force 1 High"
     },
     {
-      "filename": "shoe2.png",
+      "filename": "shoe3.jpg",
+      "price": 26000,
+      "name": "Nike Mag 2016: Back to the Future"
+    },
+    {
+      "filename": "shoe2.jpg",
       "price": 6000,
       "name": "Air Jordan 5 Motorsports 2"
     }

@@ -1,5 +1,6 @@
 import { db } from '../database/index.js';
 import bcrypt from 'bcrypt';
+const stripe = require('stripe')(keys.stripeSecretKey);
 
 export default {
   signup: (req, res) => {
@@ -11,7 +12,7 @@ export default {
       lastName: data.lastName.trim(),
       email: data.email.trim(),
       password: hash,
-     };
+    };
 
     let sql = `INSERT INTO User (email, firstName, lastName, password) VALUES ('${user.email}', '${user.firstName}', '${user.lastName}', '${user.password}');` 
     console.log('sql: ', sql);
