@@ -30,7 +30,7 @@ class Navbar extends Component {
             <div>{this.capitalize(this.props.auth.user.firstName)}</div>
             <div data-toggle="modal" data-target="#myModal">
               <span className="cartCount">
-                {Object.keys(this.props.cart).length}
+                {Object.keys(this.props.cart).length === 1? Object.keys(this.props.cart).length + ' item' : Object.keys(this.props.cart).length + ' items'}
               </span>
             </div>
             <div className="col-md-1">

@@ -1,6 +1,5 @@
 import { db } from '../database/index.js';
 import bcrypt from 'bcrypt';
-const stripe = require('stripe')(keys.stripeSecretKey);
 
 export default {
   signup: (req, res) => {
@@ -17,7 +16,7 @@ export default {
     let sql = `INSERT INTO User (email, firstName, lastName, password) VALUES ('${user.email}', '${user.firstName}', '${user.lastName}', '${user.password}');` 
     console.log('sql: ', sql);
     console.log('what is this', db)
-     
+      
     db.query(sql, (err, data) => {
       if (err) {
         res.status(400).send('Cannot insert into DB');

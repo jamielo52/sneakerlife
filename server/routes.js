@@ -1,6 +1,7 @@
 import express from 'express';
 import signupController from './controllers/signupController';
 import loginController from './controllers/loginController';
+import chargeController from './controllers/chargeController';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import ensureToken from './auth/ensureToken';
@@ -12,5 +13,8 @@ router.route('/signup')
 
 router.route('/login')
   .post(loginController.login);
+
+router.route('/charge')
+  .post(chargeController.charge);
 
 export default router;

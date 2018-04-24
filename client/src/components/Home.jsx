@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import Navbar from '../containers/navbarContainer'; 
 import Products from '../containers/productsContainer';
 import ProductList from '../../../products.json';
-import YourCart from './Cart/YourCart';
+import YourCart from '../containers/yourCartContainer';
+
 
 class Home extends Component {
   constructor(props) {
@@ -24,7 +25,6 @@ class Home extends Component {
   }
 
   removeFromCart(e, id) {
-    console.log('im clicking', id)
     let newCart = Object.assign({}, this.state.cart);
     delete newCart[id]
 
